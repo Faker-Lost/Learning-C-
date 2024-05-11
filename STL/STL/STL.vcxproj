@@ -127,7 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="stl.cpp" />
+    <ClCompile Include="string拼接.cpp" />
+    <ClCompile Include="string构造函数.cpp" />
+    <ClCompile Include="string查找与替换.cpp" />
+    <ClCompile Include="string赋值操作.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
