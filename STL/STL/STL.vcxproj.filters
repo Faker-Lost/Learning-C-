@@ -27,5 +27,11 @@
     <ClCompile Include="string查找与替换.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="vector操作.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="deque操作.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
