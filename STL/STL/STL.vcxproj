@@ -128,6 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="deque操作.cpp" />
+    <ClCompile Include="list操作.cpp" />
+    <ClCompile Include="map操作.cpp" />
+    <ClCompile Include="set操作.cpp" />
+    <ClCompile Include="stack操作.cpp" />
     <ClCompile Include="string拼接.cpp" />
     <ClCompile Include="string构造函数.cpp" />
     <ClCompile Include="string查找与替换.cpp" />

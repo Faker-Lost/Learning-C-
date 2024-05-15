@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "E:\\Cpp_Project\\zl_cpp_project\\STL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\deque\u64CD\u4F5C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|solutionrelative:STL\\deque\u64CD\u4F5C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\map\u64CD\u4F5C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|solutionrelative:STL\\map\u64CD\u4F5C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\vector\u64CD\u4F5C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|solutionrelative:STL\\vector\u64CD\u4F5C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\string\u67E5\u627E\u4E0E\u66FF\u6362.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|solutionrelative:STL\\string\u67E5\u627E\u4E0E\u66FF\u6362.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\string\u62FC\u63A5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|solutionrelative:STL\\string\u62FC\u63A5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\string\u8D4B\u503C\u64CD\u4F5C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|solutionrelative:STL\\string\u8D4B\u503C\u64CD\u4F5C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\string\u6784\u9020\u51FD\u6570.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|solutionrelative:STL\\string\u6784\u9020\u51FD\u6570.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\set\u64CD\u4F5C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B09BC77C-B8A7-478A-AE62-9F2AD673956E}|STL\\STL.vcxproj|solutionrelative:STL\\set\u64CD\u4F5C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,78 +23,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "deque\u64CD\u4F5C.cpp",
-              "DocumentMoniker": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\deque\u64CD\u4F5C.cpp",
-              "RelativeDocumentMoniker": "STL\\deque\u64CD\u4F5C.cpp",
-              "ToolTip": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\deque\u64CD\u4F5C.cpp",
-              "RelativeToolTip": "STL\\deque\u64CD\u4F5C.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAACAAAA",
+              "Title": "map\u64CD\u4F5C.cpp",
+              "DocumentMoniker": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\map\u64CD\u4F5C.cpp",
+              "RelativeDocumentMoniker": "STL\\map\u64CD\u4F5C.cpp",
+              "ToolTip": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\map\u64CD\u4F5C.cpp",
+              "RelativeToolTip": "STL\\map\u64CD\u4F5C.cpp",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-14T10:46:53.283Z",
+              "WhenOpened": "2024-05-15T11:32:49.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "vector\u64CD\u4F5C.cpp",
-              "DocumentMoniker": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\vector\u64CD\u4F5C.cpp",
-              "RelativeDocumentMoniker": "STL\\vector\u64CD\u4F5C.cpp",
-              "ToolTip": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\vector\u64CD\u4F5C.cpp",
-              "RelativeToolTip": "STL\\vector\u64CD\u4F5C.cpp",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAgwGkAAAADAAAA",
+              "Title": "set\u64CD\u4F5C.cpp",
+              "DocumentMoniker": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\set\u64CD\u4F5C.cpp",
+              "RelativeDocumentMoniker": "STL\\set\u64CD\u4F5C.cpp",
+              "ToolTip": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\set\u64CD\u4F5C.cpp",
+              "RelativeToolTip": "STL\\set\u64CD\u4F5C.cpp",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAowFUAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-14T08:08:15.748Z",
+              "WhenOpened": "2024-05-15T11:32:32.919Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "string\u67E5\u627E\u4E0E\u66FF\u6362.cpp",
-              "DocumentMoniker": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\string\u67E5\u627E\u4E0E\u66FF\u6362.cpp",
-              "RelativeDocumentMoniker": "STL\\string\u67E5\u627E\u4E0E\u66FF\u6362.cpp",
-              "ToolTip": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\string\u67E5\u627E\u4E0E\u66FF\u6362.cpp",
-              "RelativeToolTip": "STL\\string\u67E5\u627E\u4E0E\u66FF\u6362.cpp",
-              "ViewState": "AQIAACAAAAAAAAAAAAAgwCgAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-11T09:17:27.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "string\u62FC\u63A5.cpp",
-              "DocumentMoniker": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\string\u62FC\u63A5.cpp",
-              "RelativeDocumentMoniker": "STL\\string\u62FC\u63A5.cpp",
-              "ToolTip": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\string\u62FC\u63A5.cpp",
-              "RelativeToolTip": "STL\\string\u62FC\u63A5.cpp",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAgwA4AAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-11T09:05:58.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "string\u8D4B\u503C\u64CD\u4F5C.cpp",
-              "DocumentMoniker": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\string\u8D4B\u503C\u64CD\u4F5C.cpp",
-              "RelativeDocumentMoniker": "STL\\string\u8D4B\u503C\u64CD\u4F5C.cpp",
-              "ToolTip": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\string\u8D4B\u503C\u64CD\u4F5C.cpp",
-              "RelativeToolTip": "STL\\string\u8D4B\u503C\u64CD\u4F5C.cpp",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwCIAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-11T08:53:10.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "string\u6784\u9020\u51FD\u6570.cpp",
-              "DocumentMoniker": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\string\u6784\u9020\u51FD\u6570.cpp",
-              "RelativeDocumentMoniker": "STL\\string\u6784\u9020\u51FD\u6570.cpp",
-              "ToolTip": "E:\\Cpp_Project\\zl_cpp_project\\STL\\STL\\string\u6784\u9020\u51FD\u6570.cpp",
-              "RelativeToolTip": "STL\\string\u6784\u9020\u51FD\u6570.cpp",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAgwAgAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-09T07:28:02.741Z"
             }
           ]
         }
