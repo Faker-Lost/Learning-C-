@@ -128,15 +128,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="deque操作.cpp" />
+    <ClCompile Include="find_if算法.cpp" />
     <ClCompile Include="list操作.cpp" />
     <ClCompile Include="map操作.cpp" />
+    <ClCompile Include="map核心插入操作.cpp" />
+    <ClCompile Include="queue容器.cpp" />
     <ClCompile Include="set操作.cpp" />
     <ClCompile Include="stack操作.cpp" />
+    <ClCompile Include="stl算法-find_if.cpp" />
+    <ClCompile Include="STL算法.cpp" />
     <ClCompile Include="string拼接.cpp" />
     <ClCompile Include="string构造函数.cpp" />
     <ClCompile Include="string查找与替换.cpp" />
     <ClCompile Include="string赋值操作.cpp" />
     <ClCompile Include="vector操作.cpp" />
+    <ClCompile Include="map核心操作.cpp" />
+    <ClCompile Include="函数指针.cpp" />
+    <ClCompile Include="函数模板高级.cpp" />
+    <ClCompile Include="模板类具体化.cpp" />
+    <ClCompile Include="模板类用作参数.cpp" />
+    <ClCompile Include="类模板.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
