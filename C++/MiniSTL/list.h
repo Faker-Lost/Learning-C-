@@ -4,110 +4,110 @@ using namespace std;
 
 namespace
 {
-	template<class _Ty> class List;
+	template<class _ty> class list;
 
-	template<class _Ty> class ListIterator;
+	template<class _ty> class listiterator;
 
 	// 节点类。
-	template<class _Ty>
-	class ListNode
+	template<class _ty>
+	class listnode
 	{
-		friend class List<_Ty>;
-		friend class ListIterator<_Ty>;
+		friend class list<_ty>;
+		friend class listiterator<_ty>;
 	public:
-		ListNode() :_Value(_Ty()), _Next(nullptr), _Prev(nullptr) {}
-		ListNode(_Ty V, ListNode* next = nullptr, ListNode* prev = nullptr) :_Value(V), _Next(next), _Prev(prev) {}
+		listnode() :_value(_ty()), _next(nullptr), _prev(nullptr) {}
+		listnode(_ty v, listnode* next = nullptr, listnode* prev = nullptr) :_value(v), _next(next), _prev(prev) {}
 	private:
-		_Ty           _Value;
-		ListNode* _Next;
-		ListNode* _Prev;
+		_ty           _value;
+		listnode* _next;
+		listnode* _prev;
 	};
 
 	// 迭代器。
-	template<class _Ty>
-	class ListIterator
+	template<class _ty>
+	class listiterator
 	{
-		typedef ListIterator<_Ty> _It;
+		typedef listiterator<_ty> _it;
 	public:
-		ListIterator() :_Ptr(nullptr) {}
-		ListIterator(ListNode<_Ty>* _P) :_Ptr(_P) {}
+		listiterator() :_ptr(nullptr) {}
+		listiterator(listnode<_ty>* _p) :_ptr(_p) {}
 	public:
-		_It& operator++()
+		_it& operator++()
 		{
-			_Ptr = _Ptr->_Next;
+			_ptr = _ptr->_next;
 			return *this;
 		}
-		_It& operator--()
+		_it& operator--()
 		{
-			_Ptr = _Ptr->Prev;
+			_ptr = _ptr->prev;
 			return *this;
 		}
-		_Ty& operator*()
+		_ty& operator*()
 		{
-			return (_Ptr->_Value);
+			return (_ptr->_value);
 		}
-		bool operator!=(const _It& it)
+		bool operator!=(const _it& it)
 		{
-			return _Ptr != it._Ptr;
+			return _ptr != it._ptr;
 		}
-		bool operator==(const _It& it)
+		bool operator==(const _it& it)
 		{
-			return _Ptr == it._Ptr;
+			return _ptr == it._ptr;
 		}
-		ListNode<_Ty>* _Mynode()
+		listnode<_ty>* _mynode()
 		{
-			return _Ptr;
+			return _ptr;
 		}
 	private:
-		ListNode<_Ty>* _Ptr;
+		listnode<_ty>* _ptr;
 	};
 
 	// 链表类。
-	template<class _Ty>
-	class List
+	template<class _ty>
+	class list
 	{
 	public:
-		typedef ListNode<_Ty>* _Nodeptr;
-		typedef ListIterator<_Ty> iterator;
+		typedef listnode<_ty>* _nodeptr;
+		typedef listiterator<_ty> iterator;
 	public:
-		List() :_Size(0)
+		list() :_size(0)
 		{
-			CreateHead();
+			createhead();
 		}
-		List(size_t n, const _Ty& x = _Ty()) :_Size(0)
+		list(size_t n, const _ty& x = _ty()) :_size(0)
 		{
-			CreateHead(),
+			createhead(),
 				insert(begin(), n, x);
 		}
-		List(const _Ty* first, const _Ty* last) :_Size(0)
+		list(const _ty* first, const _ty* last) :_size(0)
 		{
-			CreateHead();
+			createhead();
 			while (first != last)
 				push_back(*first++);
 		}
-		List(iterator first, iterator last)
+		list(iterator first, iterator last)
 		{
-			CreateHead();
+			createhead();
 			while (first != last)
 			{
 				push_back(*first);
 				++first;
 			}
 		}
-		List(List<_Ty>& lt) :_Size(0)
+		list(list<_ty>& lt) :_size(0)
 		{
-			CreateHead();
-			List<_Ty>tmp(lt.begin(), lt.end());
+			createhead();
+			list<_ty>tmp(lt.begin(), lt.end());
 			this->swap(tmp);
 		}
-		~List()
+		~list()
 		{
 			clear();
-			delete _Head;
-			_Size = 0;
+			delete _head;
+			_size = 0;
 		}
 	public:
-		void push_back(const _Ty& x)
+		void push_back(const _ty& x)
 		{
 			insert(end(), x);
 		}
@@ -115,7 +115,7 @@ namespace
 		{
 			erase(--end());
 		}
-		void push_front(const _Ty& x)
+		void push_front(const _ty& x)
 		{
 			insert(begin(), x);
 		}
@@ -123,26 +123,26 @@ namespace
 		{
 			erase(begin());
 		}
-		_Ty& front()
+		_ty& front()
 		{
 			return *begin();
 		}
-		const _Ty& front()const
+		const _ty& front()const
 		{
 			return *begin();
 		}
-		_Ty& back()
+		_ty& back()
 		{
 			return *--end();
 		}
-		const _Ty& back()const
+		const _ty& back()const
 		{
 			return *--end();
 		}
 	public:
 		size_t size()const
 		{
-			return _Size;
+			return _size;
 		}
 		bool empty()const
 		{
@@ -151,47 +151,47 @@ namespace
 	public:
 		iterator begin()
 		{
-			return iterator(_Head->_Next);
+			return iterator(_head->_next);
 		}
 		iterator end()
 		{
-			return iterator(_Head);
+			return iterator(_head);
 		}
 		void clear()
 		{
 			erase(begin(), end());
 		}
 	public:
-		//在_P位置前插入值为x的节点
-		iterator insert(iterator _P, const _Ty& x)
+		//在_p位置前插入值为x的节点
+		iterator insert(iterator _p, const _ty& x)
 		{
-			_Nodeptr cur = _P._Mynode();
-			_Nodeptr _S = new ListNode<_Ty>(x);
+			_nodeptr cur = _p._mynode();
+			_nodeptr _s = new listnode<_ty>(x);
 
-			_S->_Next = cur;
-			_S->_Prev = cur->_Prev;
-			_S->_Prev->_Next = _S;
-			_S->_Next->_Prev = _S;
+			_s->_next = cur;
+			_s->_prev = cur->_prev;
+			_s->_prev->_next = _s;
+			_s->_next->_prev = _s;
 
-			_Size++;
-			return iterator(_S);
+			_size++;
+			return iterator(_s);
 		}
-		void insert(iterator _P, size_t n, const _Ty& x = _Ty())
+		void insert(iterator _p, size_t n, const _ty& x = _ty())
 		{
 			while (n--)
-				insert(_P, x);
+				insert(_p, x);
 		}
-		//删除_P位置的节点，返回该节点的下一个节点位置
-		iterator erase(iterator _P)
+		//删除_p位置的节点，返回该节点的下一个节点位置
+		iterator erase(iterator _p)
 		{
-			_Nodeptr cur = _P._Mynode();
-			_Nodeptr next_node = cur->_Next;
+			_nodeptr cur = _p._mynode();
+			_nodeptr next_node = cur->_next;
 
-			cur->_Prev->_Next = cur->_Next;
-			cur->_Next->_Prev = cur->_Prev;
+			cur->_prev->_next = cur->_next;
+			cur->_next->_prev = cur->_prev;
 			delete cur;
 
-			_Size--;
+			_size--;
 
 			return iterator(next_node);
 		}
@@ -203,20 +203,20 @@ namespace
 			}
 			return first;
 		}
-		void swap(List<_Ty>& lt)
+		void swap(list<_ty>& lt)
 		{
-			std::swap(_Head, lt._Head);
-			std::swap(_Size, lt._Size);
+			std::swap(_head, lt._head);
+			std::swap(_size, lt._size);
 		}
 	protected:
-		void CreateHead()
+		void createhead()
 		{
-			_Head = new ListNode<_Ty>;
-			_Head->_Prev = _Head->_Next = _Head;
+			_head = new listnode<_ty>;
+			_head->_prev = _head->_next = _head;
 		}
 	private:
-		_Nodeptr       _Head;
-		size_t         _Size;
+		_nodeptr       _head;
+		size_t         _size;
 
 	};
 };

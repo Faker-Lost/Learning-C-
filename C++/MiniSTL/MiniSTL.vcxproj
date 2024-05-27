@@ -133,6 +133,7 @@
     <ClInclude Include="list.h" />
     <ClInclude Include="miniList.h" />
     <ClInclude Include="miniVector.h" />
+    <ClInclude Include="reverse_iterator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

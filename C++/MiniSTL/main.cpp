@@ -1,30 +1,33 @@
-#include<iostream>
-#include<string>
-#include<algorithm>
-#include <sstream>
-#include <stdexcept>
-#include"miniVector.h"
+#define _CRT_SECURE_NO_WARNINGS
 #include"miniList.h"
-using namespace std;
 
-void print(List<int>& lt)
-{
-	List<int>::iterator it = lt.begin();
-	while (it != lt.end())
-	{
-		cout << *it << " ";
-		++it; // ¸üÐÂµü´úÆ÷
-	}
-	cout << endl;
-}
 void test1()
 {
-	List<int> l1;
-	l1.push_back(10);
-	print(l1);
+	List<int> ls;
+	ls.push_back(1);
+	ls.push_back(2);
+	ls.push_back(3);
+	ls.push_back(4);
+
+	/*list<int>::const_iterator it = ls.begin();
+	while (it != ls.end())
+	{
+		cout << *it << " ";
+		it++;
+	}
+	cout << endl;*/
+	List<int>::iterator it = ls.begin();
+	while (it != ls.end())
+	{
+		cout << *it << " ";
+		it++;
+	}
+	cout << endl;
+
 }
 int main()
 {
 	test1();
+
 	return 0;
 }
