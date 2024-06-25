@@ -1,24 +1,13 @@
 #include<iostream>
 using namespace std;
-class AA
+int add(int a, int b)
 {
-public:
-	int m_a;
-};
-AA getTemp()
-{
-	return AA();
+	return a + b;
 }
-
 int main()
 {
-	int&& a = 3;
-	int b = 8;
-	int&& c = b + 5;
-	AA&& aa = getTemp();
-
-	cout << "a=" << a << endl;
-	cout << "c=" << c << endl;
-	cout << "aa.m_a=" << aa.m_a << endl;
+	int (*ptr)(int, int) = &add;
+	int result = ptr(3, 4);
+	cout << result << endl;
 	return 0;
 }
